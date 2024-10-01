@@ -20,27 +20,28 @@ function App() {
 
   return (
     <div className='flex md:h-screen w-full bg-[lightgray] justify-center items-center'>
-<div className="flex flex-col md:flex-row justify-center w-full items-center md:h-[80vh] bg-[lightgreen] p-4 space-y-4 md:space-y-0 md:space-x-4 max-sm:pb-12">
-{/* <div className="flex "> */}
-    <ChatWindow
-        user={user1}
-        setUser={setUser1}
-        messages={messages}
-        sendMessage={sendMessage}
-        otherUser={user2}
-      />
-      {/* </div> */}
-      {/* <div className="flex-1"> */}
-      <ChatWindow
-        user={user2}
-        setUser={setUser2}
-        messages={messages}
-        sendMessage={sendMessage}
-        otherUser={user1}
-      />
-      {/* </div> */}
+    <div className="flex flex-col md:flex-row justify-center w-full items-center md:h-[80vh] bg-[lightgreen] p-4 space-y-4 md:space-y-0 md:space-x-4 max-sm:pb-12">
+      <div className="flex-1 max-w-md overflow-auto md:max-h-full">
+        <ChatWindow
+          user={user1}
+          setUser={setUser1}
+          messages={messages}
+          sendMessage={sendMessage}
+          otherUser={user2}
+        />
+      </div>
+      <div className="flex-1 max-w-md overflow-auto md:max-h-full">
+        <ChatWindow
+          user={user2}
+          setUser={setUser2}
+          messages={messages}
+          sendMessage={sendMessage}
+          otherUser={user1}
+        />
+      </div>
     </div>
-    </div>
+  </div>
+  
   );
 }
 

@@ -61,7 +61,7 @@ function ChatWindow({ user, setUser, messages, sendMessage, otherUser }) {
   };
 
   return (
-<div className="mockup-phone border-[green] w-full max-sm:w-[350px] max-w-[400px] flex flex-col mx-auto ">
+<div className="mockup-phone border-[green] w-full max-sm:w-[350px] max-w-[400px] flex flex-col mx-auto  h-full">
 <div className="camera h-2 bg-black"></div>
       <div className="display flex-grow relative flex items-center justify-center ">
         <div
