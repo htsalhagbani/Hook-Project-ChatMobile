@@ -19,8 +19,9 @@ function App() {
   };
 
   return (
-<div className="flex flex-col md:flex-row justify-center w-full items-center md:h-screen bg-[lightgray] p-4 space-y-4 md:space-y-0 md:space-x-4 max-sm:pb-12">
-<div className="flex-1 max-w-md bg-red-200 md:max-h-1/5">
+    <div className='flex md:h-screen w-full bg-[lightgray] justify-center items-center'>
+<div className="flex flex-col md:flex-row justify-center w-full items-center md:h-[80vh] bg-[lightgreen] p-4 space-y-4 md:space-y-0 md:space-x-4 max-sm:pb-12">
+<div className="flex-1 max-w-md  ">
     <ChatWindow
         user={user1}
         setUser={setUser1}
@@ -29,7 +30,7 @@ function App() {
         otherUser={user2}
       />
       </div>
-      <div className="flex-1 max-w-md md:max-h-1/5">
+      <div className="flex-1 max-w-md ">
       <ChatWindow
         user={user2}
         setUser={setUser2}
@@ -38,6 +39,7 @@ function App() {
         otherUser={user1}
       />
       </div>
+    </div>
     </div>
   );
 }
