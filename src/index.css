@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+ 
+  /* Add this to your CSS file */
+.scroll-container {
+    overflow-y: auto; /* Ensures vertical scrolling */
+  }
+  
+  .scroll-container::-webkit-scrollbar {
+    width: 4px; /* Set the width of the scrollbar */
+  }
+  
+  .scroll-container::-webkit-scrollbar-thumb {
+    background: rgb(17, 17, 17); /* Thumb color */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  .scroll-container::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1); /* Track color */
+  }
+  
