@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ChatWindow from './component/ChatWindow';
 // import './App.CSS';
-import './index.CSS';
+import './index.css';
 
 function App() {
   const [user1, setUser1] = useState({ id: 'user1', name: '', image: '' });
