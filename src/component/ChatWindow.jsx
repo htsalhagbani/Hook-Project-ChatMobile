@@ -143,7 +143,7 @@ function ChatWindow({ user, setUser, messages, sendMessage, otherUser }) {
                 type="file"
                 accept="image/*"
                 onChange={handleImageUpload}
-                className="text-black p-2 mb-2 bg-white "
+                className="text-white p-2 mb-2  "
               />
               <button type="submit" className="bg-green-500 text-white p-2">
                 Start Chat
