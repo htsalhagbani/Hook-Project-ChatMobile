@@ -89,14 +89,15 @@ function ChatWindow({ user, setUser, messages, sendMessage, otherUser }) {
                     key={index}
                     className={`chat mb-4 pl-2 pr-2  w-[90%] md:w-full flex ${msg.sender === user.id ? 'chat-end flex-row-reverse max-sm:ml-4  ' : 'chat-end  max-sm:ml-4 '}`}
                     >
-                    <div className="chat-image avatar">
-                        <div className="w-10 rounded-full overflow-hidden">
-                        <img
-                            alt={`${msg.sender} Avatar`}
-                            src={msg.sender === user.id ? user.image || defaultAvatar : otherUser.image || defaultAvatar}
-                        />
-                        </div>
-                    </div>
+                  <div className="chat-image avatar">
+                <div className="w-10 rounded-full overflow-hidden">
+                    <img
+                        alt={`${msg.sender} Avatar`}
+                        src={msg.sender === user.id ? user.image || defaultAvatar : otherUser.image || defaultAvatar}
+                        className="object-cover w-full h-full" 
+                    />
+                </div>
+            </div>
                     <div className={`flex flex-col ${msg.sender === user.id ? 'items-end' : 'items-start '}`}>
                         <div className={`chat-header text-white mb-1 ${msg.sender === user.id ? 'text-end' : 'text-start'}`}>
                         <span>{msg.sender === user.id ? user.name : otherUser.name}</span>

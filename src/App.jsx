@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ChatWindow from './component/ChatWindow';
-import './App.CSS';
+// import './App.CSS';
 import './index.CSS';
 
 function App() {
