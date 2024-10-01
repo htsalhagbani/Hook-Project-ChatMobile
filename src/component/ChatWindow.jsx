@@ -84,7 +84,7 @@ function ChatWindow({ user, setUser, messages, sendMessage, otherUser }) {
             <div className="flex flex-col w-full h-full  flex-grow justify-end">
                 <div className="flex flex-col p-2  overflow-y-auto  md:pb-2 pb-6 mb-6"
                 >
-                {messages.map((msg, index) => (
+               {isSetupComplete && messages.map((msg, index) => (
                     <div
                     key={index}
                     className={`chat mb-4 pl-2 pr-2  w-[90%] md:w-full flex ${msg.sender === user.id ? 'chat-end flex-row-reverse max-sm:ml-4  ' : 'chat-end  max-sm:ml-4 '}`}
