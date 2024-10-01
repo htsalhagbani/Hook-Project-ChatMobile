@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ChatWindow from './component/ChatWindow';
-// import './App.CSS';
+// import './App.css';
 import './index.css';
 
 function App() {
@@ -20,8 +20,7 @@ function App() {
 
   return (
 <div className="flex flex-col md:flex-row justify-center w-full items-center md:h-screen bg-[lightgray] p-4 space-y-4 md:space-y-0 md:space-x-4 max-sm:pb-12">
-<div className="flex-1 max-w-md">
-
+<div className="flex-1 max-w-md bg-red-200 md:max-h-1/5">
     <ChatWindow
         user={user1}
         setUser={setUser1}
@@ -30,7 +29,7 @@ function App() {
         otherUser={user2}
       />
       </div>
-      <div className="flex-1 max-w-md">
+      <div className="flex-1 max-w-md md:max-h-1/5">
       <ChatWindow
         user={user2}
         setUser={setUser2}

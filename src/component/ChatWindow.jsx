@@ -137,13 +137,13 @@ function ChatWindow({ user, setUser, messages, sendMessage, otherUser }) {
                 value={user.name}
                 onChange={(e) => setUser({ ...user, name: e.target.value })}
                 required
-                className="border p-2 mb-2"
+                className="border p-2 mb-2 bg-white text-black"
               />
               <input
                 type="file"
                 accept="image/*"
                 onChange={handleImageUpload}
-                className="text-white p-2 mb-2"
+                className="text-white p-2 mb-2 bg-white "
               />
               <button type="submit" className="bg-green-500 text-white p-2">
                 Start Chat
@@ -155,7 +155,7 @@ function ChatWindow({ user, setUser, messages, sendMessage, otherUser }) {
         {isSetupComplete && (
           <div className="absolute bottom-0 left-0 right-0 p-4 bg-white bg-opacity-80 flex items-center">
           <textarea
-            className="flex-grow border rounded-lg p-2 resize-none w-48 max-w-full"
+            className="flex-grow border rounded-lg p-2 resize-none w-48 max-w-full bg-white text-black"
             placeholder="Type a message..."
             value={message}
             onChange={handleChange}
